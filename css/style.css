@@ -1,0 +1,119 @@
+body {
+    --backColor: rgb(27, 27, 27);
+    background-color: var(--backColor);
+}
+
+.searchStyle {
+    margin: 10px;
+    padding: 5px;
+    font-size: 17px;
+    font-weight: 500;
+    background-color: var(--backColor);
+    color: rgb(151, 151, 151);
+    border-style: none;
+    border-bottom: 1px solid white;
+    text-align: center;
+    width: 50%;
+}
+
+
+/* ------------------------------------ styling movieItem ------------------------------- */
+
+.movieItem {
+    position: relative;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.movieDetails {
+    position: absolute;
+    top: 100%;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 99;
+    background-color: rgba(255, 250, 243, 0.751);
+    transition: all 0.5s;
+}
+
+.movieDetails .data {
+    padding: 10px;
+    position: inherit;
+    transition: all 0.5s;
+    top: 100%;
+}
+
+.movieItem:hover .movieDetails {
+    top: 0%;
+}
+
+.movieItem:hover .movieDetails .data {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/* ------------------------------------ finished styling movieItem ------------------------------- */
+
+
+/* ------------------------------------  styling sidebar ------------------------------- */
+
+.sidebar {
+    position: fixed;
+    left: -250px;
+    top: 0%;
+    bottom: 0%;
+    z-index: 999;
+    translate: all 0.55s;
+}
+
+
+/* ------------------------------------ finished sidebar ------------------------------- */
+
+
+/* ------------------------------------  styling menu ------------------------------- */
+
+.menu {
+    width: 250px;
+    overflow: hidden;
+    position: relative;
+    background-color: var(--backColor);
+    color: aliceblue;
+}
+
+.menu a {
+    padding: 15px;
+    font-weight: 200;
+    font-size: 16px;
+    text-decoration: none;
+    color: aliceblue;
+    display: block;
+}
+
+
+/* ------------------------------------ finished styling menu ------------------------------- */
+
+
+/* ------------------------------------  styling nav ------------------------------- */
+
+nav {
+    width: 60px;
+    position: absolute;
+    left: 100%;
+    top: 0px;
+    bottom: 0px;
+    text-align: center;
+    background-color: rgb(231, 231, 231);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav i:hover {
+    cursor: pointer;
+    color: rgb(224, 2, 2);
+}
+
+
+/* ------------------------------------ finished styling nav ------------------------------- */
